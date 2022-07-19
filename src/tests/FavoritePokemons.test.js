@@ -1,12 +1,11 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
 import userEvent from '@testing-library/user-event';
 import { FavoritePokemons } from '../pages';
 import renderWithRouter from '../helpers/renderWithRouter';
 import App from '../App';
 
-describe('Testando o componente NotFound', () => {
+describe('Testando o componente FavoritePokemons', () => {
   test('mensagem No favorite pokemon found, caso não tenha pokémons favoritos', () => {
     renderWithRouter(<FavoritePokemons />);
 
